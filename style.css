@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background: rgb(240, 121, 53);
+    color: white;
+    height: 4.7rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.gameContainer{
+/* background: red; */
+display: flex;
+justify-content: center;
+margin-top: 3rem;
+}
+
+.container{
+display: grid;
+grid-template-columns: repeat(3,10vw);
+grid-template-rows: repeat(3,10vw);
+font-family: 'Ubuntu', sans-serif;
+padding-left: 7vw;
+
+}
+
+img {
+    width: 0vw;
+}
+
+.box {
+    border: 1px solid black;
+    font-size: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover {
+    background: rgb(242, 198, 179);
+    cursor: pointer;
+}
+
+.gameInfo{
+    /* background: green; */
+    padding: 0 34px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 1.7rem;
+}
+
+.br0{
+border-right: 0;
+}
+.bl0{
+border-left: 0;
+}
+.bt0{
+border-top: 0;
+}
+.bb0{
+border-bottom: 0;
+}
+
+
+
+
+.gameInfo div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.6rem;
+
+}
+
+.gameInfo div button{
+    margin-top: .7rem;
+    padding: .4rem 1.4rem;
+    font-size: .8rem;
+    background: rgb(237, 150, 83);
+    border: 1px solid black;
+    border-radius: 2rem;
+    cursor: pointer;
+
+}
+
+.gameInfo div button:hover{
+    background: rgb(231, 173, 132);
+    border: 1px solid rgb(15, 14, 15);
+    color: white;
+} 
+
+
+body{
+    margin-bottom: 500px;
+}
+
+.practice {
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+
+@media(max-width:1200px){
+
+    .gameContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20vh;
+    }
+
+ .gameInfo{
+    margin-top: 7vh;
+    font-size: 1rem;
+ }
+
+
+.gameInfo div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.6rem;
+
+}
+
+.gameInfo div button{
+    margin-top: .7rem;
+    padding: .4rem 1.4rem;
+    font-size: .8rem;
+    background: rgb(232, 154, 115);
+    border: 1px solid black;
+    border-radius: 2rem;
+    cursor: pointer;
+
+}
+
+.gameInfo div button:hover{
+    background: rgb(226, 106, 55);
+    border: 1px solid rgb(223, 61, 238);
+    color: white;
+} 
+
+.container {
+    padding-left: 0;
+
+    grid-template-columns: repeat(3,15vw);
+grid-template-rows: repeat(3,15vw);
+
+
+}
+
+.box {
+    font-size: 3rem;
+}
+}
+
+.displayNone{
+    display: none;
+}
+
+
